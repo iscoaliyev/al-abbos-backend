@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: al-abbos-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: BOT_TOKEN
+        value: your_bot_token
+      - key: CHAT_ID
+        value: your_chat_id
